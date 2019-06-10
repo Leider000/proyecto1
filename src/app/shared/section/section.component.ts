@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductoService } from '../../service/producto.service';
 
 @Component({
   selector: 'app-section',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _producto: ProductoService) { 
+    
+  }
 
   ngOnInit() {
   }

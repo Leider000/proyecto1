@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
+//rutas
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -9,6 +11,7 @@ import { SectionPortafiolioComponent } from './paginas/section-portafiolio/secti
 import { AboutComponent } from './paginas/about/about.component';
 import { PortaItemComponent } from './paginas/porta-item/porta-item.component';
 import { AppRouting } from './app-routing.module';
+import { SearchComponent } from './paginas/search/search.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,13 @@ import { AppRouting } from './app-routing.module';
     SectionComponent,
     SectionPortafiolioComponent,
     AboutComponent,
-    PortaItemComponent
+    PortaItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRouting
+    AppRouting,
+    HttpClientModule
 
   ],
   providers: [],
