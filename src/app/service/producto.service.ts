@@ -54,11 +54,11 @@ export class ProductoService {
           this.cargarProductos().then( ()=>{
              //ejecutar despues de tener los productos
              //Aplicar filtro
-          this.filtrarProductos(termino);
+          this.filtrarProductos(termino.toLowerCase());
           });
     }else{
       //aplicar filtro
-      this.filtrarProductos( termino );
+      this.filtrarProductos( termino.toLowerCase() );
     }
     // Funciones para la barra de busqueda
     //Hace lo mismo que el metodo de filtrarProductos, planteado de otra manera
